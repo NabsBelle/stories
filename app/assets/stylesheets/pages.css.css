@@ -1,46 +1,154 @@
-div {
-  display: block;
+html,
+body {
+  margin: 0;
 }
 
-.home .wallpaper {
-  background: url(https://wallpaperaccess.com/full/1771271.jpg) center center;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.btn-default,
+.btn-primary {
+  border-radius: 0;
+  font-size: 16px;
+  padding: 12px 26px;
+}
+
+.btn-primary {
+  background-color: #2E72BD;
+}
+
+.home-main {
+  background: url(https://wallpaperaccess.com/full/1771271.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 600px;
-  width: 100%;
+  height: 700px;
 }
 
-.col-md-1 {
-  max-width: 70%;
+.home-main .content {
+  position: relative;
+  top: 150px;
+  text-align: center;
 }
 
-.col-md-offset-1 {
-  float: left;
-  margin-left: 50%;
-}
-
-a.btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5;
+.home-main h1 {
   color: #fff;
-  font-size: 18px;
   font-weight: 100;
-  height: 60px;
-  line-height: 60px;
-  margin: 40px 0;
-  padding: 0 50px;
-  transition: background-color 0.5s;
-  vertical-align: middle;
-  width: 200px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.home-supporting,
+.home-about,
+.about-supporting {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.home-supporting h2,
+.home-about h2,
+.about-supporting h2 {
+  color: #000;
+  margin: 30px 0;
+}
+
+.home-supporting p,
+.about-supporting p {
+  font-size: 21px;
+  font-weight: 100;
+}
+
+.about-supporting p {
+  margin-top: 30px;
+}
+
+.home-secondary {
+  background: url(https://i.pinimg.com/originals/e1/4d/2b/e14d2b7129ace3558345be3aec3b990f.jpg) no-repeat center center;
+  background-size: cover;
+  height: 1000px;
+}
+
+.about-main {
+  background: url(https://c2.staticflickr.com/6/5092/5440636111_4f24294125.jpg) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+}
+
+.about-main .content {
+  position: relative;
+  top: 150px;
+  text-align: center;
+}
+
+.about-main h1 {
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.about-main p {
+  font-size: 21px;
+  font-weight: 100;
 }
 
 .footer {
-  background-color: #080a0b;
-  border-top-color: #2c2b29;
+  background-color: #f9f9f9;
   border-top: solid 1px #F5F5F5;
   padding: 40px 0 30px 0;
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+.footer p {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.menu {
+  background-color: #000;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 240px;
+  left: -240px;
+  z-index: 1;
+}
+
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li a,
+.menu li a:visited {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 30px 40px;
+  text-decoration: none;
+}
+
+.menu .icon-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.icon-menu {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
 }
